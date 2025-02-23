@@ -1,0 +1,361 @@
+header
+{
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.great-vibes-regular {
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.header-tag h1
+{
+    font-size: 70px;
+}
+
+.header-tag h3
+{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.header-tag h3::after
+{
+    content: "|";
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#upBtn
+{
+    background-color: #0078ff;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 12px;
+    font-size: 18px;
+    z-index: 999;
+    display: none;
+}
+
+nav
+{
+    transition: background-color 1s;
+}
+
+nav .navbar-nav
+{
+    width: 40%;
+    font-weight: 500;
+    font-size: 17px;
+    margin-right: 40px;
+}
+
+.line
+{
+    width: 80%;
+    height: 2px;
+}
+
+.navbar li:hover>.line
+{
+    background-color: white;
+    animation-name: line-width;
+    animation-duration: 0.25s;
+}
+
+/* Start About-Section */
+.about-section
+{
+    width: 85%;
+    height: 80%;
+}
+
+.about-line
+{
+    width: 15%;
+    height: 3px;
+    background-color: #0078ff;
+}
+
+.about-section ul
+{
+    font-size: 18px;
+}
+
+.about-section ul li span
+{
+    font-weight: 600;
+}
+
+.about-section .skills .line1
+{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(232, 230, 230);
+    border-radius: 3%;
+    margin-bottom: 20px;
+}
+
+.about-section .skills .HTML
+{
+    width: 95%;
+    height: 100%;
+    background-color: #0078ff;
+    border-radius: 3%;
+}
+
+.about-section .skills .CSS
+{
+    width: 90%;
+    height: 100%;
+    background-color: #0078ff;
+    border-radius: 3%;
+}
+
+.about-section .skills .React
+{
+    width: 85%;
+    height: 100%;
+    background-color: #0078ff;
+    border-radius: 3%;
+}
+
+.about-section .skills .JAVASCRIPT
+{
+    width: 90%;
+    height: 100%;
+    background-color: #0078ff;
+    border-radius: 3%;
+}
+
+.about-section .skills h6
+{
+    font-weight: 400;
+    color: #4e4e4e;
+}
+/* End About-Section */
+
+/* Start Services-Section */
+.Services-section .Services-line
+{
+    width: 3%;
+    height: 4px;
+    background-color: #0078ff;
+}
+
+.Services-section h2
+{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.SERVICES .circle
+{
+    width: 120px;
+    height: 120px;
+    border: solid #0078ff 10px;
+    border-radius: 50%;
+    transition: border-color 0.5s, background-color 0.7s, color 0.7s;
+}
+
+.SERVICES i
+{
+    font-size: 50px;
+    
+}
+
+.SERVICES .service-type
+{
+    width: 32%;
+}
+
+.SERVICES .service-type:hover>.circle
+{
+    border-color: #c0dbfa;
+    background-color: #0078ff;
+    color: white;
+}
+/* End Services-Section */
+
+/* Start Details-Section */
+.Details
+{
+    height: 60vh;
+    background-image: url(../images/post-3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.Details .blur
+{
+    background-color: #0078ff;
+    opacity: 0.6;
+}
+
+.Details .circle
+{
+    width: 100px;
+    height: 100px;
+    border: solid white 10px;
+    border-radius: 50%;
+}
+
+.Details i
+{
+    font-size: 40px;
+    color: white;
+}
+/* End Details-Section */
+
+/* Start Work-Section */
+.Work .work-details
+{
+    width: 32%;
+}
+
+.Work .work-details .work-description
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Work .work-details .work-type
+{
+    font-size: 13px;
+}
+
+.Work .work-details .work-type span
+{
+    color: #0078ff;
+}
+
+.Work .btn
+{
+    width: 40px;
+    height: 40px;
+    
+}
+
+.Work .btn .vertical
+{
+    width: 3px;
+    height: 100%;
+    background-color: #0078ff;
+}
+
+.Work .btn .horizontal
+{
+    width: 1.5%;
+    height: 3px;
+    background-color: #0078ff;
+}
+
+.Work .work-details .image img
+{
+    transition: transform 0.5s;
+}
+
+.Work .work-details .image
+{
+    overflow: hidden;
+}
+
+.Work .work-details:hover>.image img
+{
+    transform: scale(1.2,1.2);
+}
+/* End Work-Section */
+
+@keyframes line-width 
+{
+    0%{width: 0%;}
+    15%{width: 10%;}
+    30%{width: 20%;}
+    45%{width: 30%;}
+    60%{width: 40%;}
+    75%{width: 50%;}
+    90%{width: 60%;}
+    100%{width: 70%;}
+}
+
+@keyframes typing 
+{
+    0%{content: "D|";} 
+    3%{content: "De|";} 
+    6%{content: "Dev|";} 
+    9%{content: "Deve|";} 
+    12%{content: "Devel|";} 
+    15%{content: "Develo|";} 
+    18%{content: "Develop|";} 
+    21%{content: "Developer|";} 
+    24%{content: "Develop|";} 
+    27%{content: "Develo|";} 
+    30%{content: "Devel|";} 
+    33%{content: "Deve|";} 
+    36%{content: "Dev|";} 
+    39%{content: "De|";} 
+    42%{content: "D|";} 
+    45%{content: "|";} 
+    48%{content: "F|";} 
+    51%{content: "Fr|";} 
+    54%{content: "Fre|";} 
+    57%{content: "Free|";} 
+    60%{content: "Freel|";} 
+    63%{content: "Freela|";} 
+    66%{content: "Freelan|";} 
+    69%{content: "Freelanc|";} 
+    72%{content: "Freelance|";} 
+    75%{content: "Freelancer|";} 
+    78%{content: "Freelance|";} 
+    81%{content: "Freelanc|";} 
+    84%{content: "Freelan|";} 
+    87%{content: "Freela|";} 
+    90%{content: "Freel|";} 
+    93%{content: "Free|";} 
+    94%{content: "Fre|";} 
+    96%{content: "Fr|";} 
+    98%{content: "F|";} 
+    100%{content: "|";} 
+}
+
+@media only screen and (max-width: 992px)
+{
+    .about-section
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .header-tag h1
+    {
+        font-size: 50px;
+    }
+
+    .header-tag h3
+    {
+        font-size: 30px;
+    }
+
+    .SERVICES .service-type
+    {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .Work .work-details
+    {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
