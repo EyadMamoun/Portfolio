@@ -121,7 +121,7 @@ nav .navbar-nav
 
 .about-section .skills .React
 {
-    width: 85%;
+    width: 90%;
     height: 100%;
     background-color: #0078ff;
     border-radius: 3%;
@@ -168,7 +168,6 @@ nav .navbar-nav
 .SERVICES i
 {
     font-size: 50px;
-    
 }
 
 .SERVICES .service-type
@@ -196,8 +195,23 @@ nav .navbar-nav
 
 .Details .blur
 {
-    background-color: #0078ff;
-    opacity: 0.6;
+    /* 
+💡 PRO TIP: Opacity Gotcha Explained
+
+If a parent element (like .blur) has `opacity` set (e.g., opacity: 0.6),
+then ALL children inside it automatically inherit that faded appearance.
+This is not affected by `z-index`.
+
+✅ If you want to only make the background slightly transparent — without affecting inner text/icons — 
+the better approach is to use `rgba()` background color like:
+
+background-color: rgba(0, 120, 255, 0.6);
+
+❌ Trying to fix this with `z-index` won't work — `z-index` only controls stacking order,
+not inherited styles like opacity.
+*/
+
+    background-color: rgba(0, 120, 255, 0.6); 
 }
 
 .Details .circle
@@ -273,6 +287,47 @@ nav .navbar-nav
     transform: scale(1.2,1.2);
 }
 /* End Work-Section */
+
+/* Start Footer-Section */
+.contact h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact .Services-line {
+    width: 3%;
+    height: 4px;
+    background-color: #0078ff;
+    margin: 0 auto 20px;
+}
+
+.contact form input,
+.contact form textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #0078ff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.contact form button:hover {
+    background-color: #005bb5;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #555;
+}
+
+.contact i {
+    color: #0078ff;
+}
+
+/* End Footer-Section */
 
 @keyframes line-width 
 {

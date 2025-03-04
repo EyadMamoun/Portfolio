@@ -18,3 +18,10 @@ $("a[href^='#']").click(function(eventInfo){
     let aboutTop = $(aHref).offset().top;
     $("html,body").animate({scrollTop:aboutTop},1000);
 })
+
+$("form").submit(function(e) {
+    e.preventDefault();
+    alert("Thank you for your message! I'll get back to you soon.");
+    $(this).trigger("reset");
+});
+
